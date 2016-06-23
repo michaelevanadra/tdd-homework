@@ -1,18 +1,85 @@
-## TDD Homework
+# TDD Homework
 
-We practice Test Driven Development.
+These simple exercises will guide you through the first steps of writing tests and developing code with TDD.
 
-This simple exercise shows an example of what we expect from our development teams.
+## Intro to TDD
 
-## Task
+In TDD we write tests
 
-1. Clone the github repo
-2. Make the tests pass
+https://www.youtube.com/watch?v=qmS4ojQ1Pa8
+
+### The three rules of TDD
+
+1. You are not allowed to write any code in the application unless it is to make a failing test pass.
+
+2. You are not allowed to write any more of a unit test than is sufficient to fail.
+
+3. You are not allowed to write any more code in the application than is sufficient to make a failing test pass.
+
+## The project
+
+calculator.js - This is the beginings of a simple calculator app. You are building this with TDD. You don't need to run the app, just test it.
+
+calculator.test.js - These are your tests. In TDD the tests describe the behaviour of the app and prove that it works.
 
 ## Setup
 
-- `git clone .........`
-- `cd tdd-homework`
-- `npm install`
-- `npm test`
+1. `git clone .........`
+2. `cd tdd-homework`
+3. `npm install`
+
+To run your tests:
+
+`npm test`
+
+## Your tasks
+
+Follow the setup instructions above and run the tests.
+
+Please commit and push your code after each task. Your tasks are as follows:
+
+### 1. Make the first test pass ("should add two numbers").
+
+Add code to the `add` method in calculator.js to make the first tess pass instead of fail. Run `npm test` to see if you have succeeded.
+
+### 2. Create the test case for "should multiply two numbers".
+
+There is an empty test case - "should multiply two numbers" - in calculator.test.js. You should write a test case for the `multiply` method to ensure it wil multiply two numbers correctly.
+
+### 3. Create a test for a new method `remainder`.
+
+Create a test for a new method `remainder` which will give the remainder after a division of two numbers (modulo). Make a test case which fails first, before writing the method in the calculator.
+
+### 4. Make the _remainder_ test pass
+
+Write a `remainder` method in calculator.js which makes the prevous test pass. Hint: Use the modulo operator.
+
+### 5. Improve the `add` method
+
+Writing tests *first*, improve the add method so that it accepts any number of parameters and adds them together, e.g.
+
+`add(1,1,1,1,1)` returns 5
+
+`add(2,2,2,2,2,2,2,2,2,2)` returns 20
+
+### 6. Use TDD to create a new method `addString`.
+
+Writing tests first and following the 3 rules above, write a new method `addString`. The behavior for this method is described below. Write small tests for each behaviour then make the test pass before writing another test. Go as far as you can and check in your code after each test and each time you pass a test.
+
+The `addString` method should work like this:
+
+1. The method takes one parameter which should be a string.
+
+2. The string can contain 0, 1 or 2 numbers and will return their sum (for an empty string it will return 0). Numbers should be separated with a comma. For example “” or “1” or “1,2”.
+
+    - Start with the simplest test case of an empty string and move to 1 and two numbers
+    - Remember to solve things as simply as possible so that you force yourself to write tests you did not think about
+    - Remember to refactor after each passing test
+
+3. Improve the `addString` method to take an unknown number of numbers in the string separated by commas, e.g. `addString("1,2,3,4,5")` returns 15
+
+4. If a number is negative, throw an exception "negatives not allowed".
+
+
+
 
