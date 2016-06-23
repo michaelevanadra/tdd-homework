@@ -38,13 +38,13 @@ Follow the setup instructions above and run the tests.
 
 Please commit and push your code after each task. Your tasks are as follows:
 
-### 1. Make the first test pass ("should add two numbers").
+### 1. Make the first test pass (_should add two numbers_).
 
 Add code to the `add` method in calculator.js to make the first tess pass instead of fail. Run `npm test` to see if you have succeeded.
 
-### 2. Create the test case for "should multiply two numbers".
+### 2. Create the test case for _should multiply two numbers_.
 
-There is an empty test case - "should multiply two numbers" - in calculator.test.js. You should write a test case for the `multiply` method to ensure it wil multiply two numbers correctly.
+There is an empty test case - _should multiply two numbers_ - in calculator.test.js. You should write a test case for the `multiply` method to ensure it wil multiply two numbers correctly.
 
 ### 3. Create a test for a new method `remainder`.
 
