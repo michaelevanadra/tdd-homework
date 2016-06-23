@@ -40,19 +40,29 @@ Please commit and push your code after each task. Your tasks are as follows:
 
 ### 1. Make the first test pass (_should add two numbers_).
 
-Add code to the `add` method in calculator.js to make the first tess pass instead of fail. Run `npm test` to see if you have succeeded.
+If you run `npm test` you will see that we have 1 test and it is failing. This test is in defined in calculator.test.js and looks like this:
+
+```
+it('should add two numbers', function() {
+  assert.equal(calculator.add(1,1), 2);
+});
+```
+
+Your job is to add some code to the `add` method in calculator.js to make this test pass. Edit the `add` method and run `npm test` to see if you have succeeded.
 
 ### 2. Create the test case for _should multiply two numbers_.
 
-There is an empty test case - _should multiply two numbers_ - in calculator.test.js. You should write a test case for the `multiply` method to ensure it wil multiply two numbers correctly.
+There is an empty test called _should multiply two numbers_ - in calculator.test.js. The test needs to be defined so that it tests the method `multiply` to ensure it wil multiply two numbers correctly.
+
+Define the test for the multiply method and make sure it passes.
 
 ### 3. Create a test for a new method `remainder`.
 
-Create a test for a new method `remainder` which will give the remainder after a division of two numbers (modulo). Make a test case which fails first, before writing the method in the calculator.
+Create a test for a new method `remainder` which will give the remainder after a division of two numbers (modulo). Just write the test, which will fail when you run `npm test`, not the `remaineder` method itself.
 
 ### 4. Make the _remainder_ test pass
 
-Write a `remainder` method in calculator.js which makes the prevous test pass. Hint: Use the modulo operator.
+Now, write a `remainder` method in calculator.js which makes the prevous test pass. Hint: Use the modulo operator.
 
 ### 5. Improve the `add` method
 
