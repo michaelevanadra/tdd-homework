@@ -24,7 +24,8 @@ calculator.test.js - These are your tests. In TDD the tests describe the behavio
 
 ## Setup
 
-1. `git clone .........`
+1. Fork this repository to your own github account (create one for free if you don't already have one).
+2. `git clone` the code to your local machine
 2. `cd tdd-homework`
 3. `npm install`
 
