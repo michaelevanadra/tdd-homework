@@ -1,12 +1,12 @@
 # TDD Homework
 
-These simple exercises will guide you through the first steps of writing tests and developing code with TDD.
+These simple exercises will guide you through the first steps of writing tests and developing code with TDD. The later tasks get more difficult but try to follow the TDD principles and see how far you can get.
 
 ## Intro to TDD
 
-In TDD we write tests
+In TDD we write small tests before we write code. Then we write our code and once the test passes we write another test. 
 
-https://www.youtube.com/watch?v=qmS4ojQ1Pa8
+Here's a video introduction to TDD: https://www.youtube.com/watch?v=qmS4ojQ1Pa8 (it's a little slow but good, feel free to skip through or play on 1.5x speed)
 
 ### The three rules of TDD
 
@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=qmS4ojQ1Pa8
 
 3. You are not allowed to write any more code in the application than is sufficient to make a failing test pass.
 
-## The project
+## This project
 
 calculator.js - This is the beginings of a simple calculator app. You are building this with TDD. You don't need to run the app, just test it.
 
