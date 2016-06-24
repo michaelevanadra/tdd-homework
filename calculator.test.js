@@ -8,6 +8,7 @@ describe('Calculator', function() {
 
   it('should add two numbers', function() {
     assert.equal(calculator.add(1,1), 2);
+    assert.equal(calculator.add(1,1,1,1,1), 5);
   });
 
   it('should multiply two numbers', function() {
