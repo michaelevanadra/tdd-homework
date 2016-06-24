@@ -30,6 +30,7 @@ describe('Calculator', function() {
   it('should add string', function(){
     assert.equal(calculator.addString(""), 0);
     assert.equal(calculator.addString("1"), 1);
+    assert.equal(calculator.addString("1,2"), 3);
   });
 
 });
