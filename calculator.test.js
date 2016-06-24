@@ -28,7 +28,7 @@ describe('Calculator', function() {
   });
 
   it('should add string', function(){
-    assert.equal(calculator.addString(""), true);
+    assert.equal(calculator.addString(""), 0);
   });
 
 });
