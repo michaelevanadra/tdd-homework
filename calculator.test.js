@@ -19,6 +19,8 @@ describe('Calculator', function() {
 
   // test for divide
 
-  // test of remainder
+  it('should get the remainder of two numbers', function() {
+    assert.equal(calculator.remainder(1,1), 0);
+  });
 
 });
