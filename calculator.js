@@ -29,5 +29,9 @@ exports.remainder = function( val1, val2 ){
 }
 
 exports.addString = function( str ){
-  return typeof str === "string";
+  if (typeof str === "string"){
+    if(str == ""){
+      return 0;
+    };
+  }
 }
