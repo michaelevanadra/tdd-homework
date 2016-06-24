@@ -33,7 +33,13 @@ exports.addString = function( str ){
     var strNumbers = str.split(",");
     var returnValue = 0;
     if ( strNumbers.length > 1 ){
-      returnValue = Number(strNumbers[0]) + Number(strNumbers[1]);
+      var i=0;
+      while( i < strNumbers.length - 1 ){
+        i++;
+        strNumbers[i] = Number(strNumbers[i-1]) + Number(strNumbers[i]);
+      }
+      returnValue = strNumbers[i];
+
     }else {
       returnValue = strNumbers[0] == "" ? 0 : Number(str);
     }
