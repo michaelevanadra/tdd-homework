@@ -27,4 +27,8 @@ describe('Calculator', function() {
     assert.equal(calculator.remainder(1,1), 0);
   });
 
+  it('should add string', function(){
+    assert.equal(calculator.addString(), 0);
+  });
+
 });
