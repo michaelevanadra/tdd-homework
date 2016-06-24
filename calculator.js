@@ -1,10 +1,18 @@
 'use strict';
 
 /**
- * A function the returns the sum of two Numbers
+ * A function the returns the sum of the value of
+ * any number of parameters
  */
-exports.add = function( val1, val2 ) {
-  return Number(val1) + Number(val2);
+exports.add = function() {
+  var i=0;
+  if( arguments.length > 1 ){
+    while( i < arguments.length - 1 ){
+      i++;
+      arguments[i] = Number(arguments[i-1]) + Number(arguments[i]);
+    }
+  }
+  return arguments[i] | 0;
 }
 
 exports.multiply = function(val1, val2) {
