@@ -30,6 +30,13 @@ exports.remainder = function( val1, val2 ){
 
 exports.addString = function( str ){
   if (typeof str === "string"){
-    return str == "" ? 0 : Number(str) ;
+    var strNumbers = str.split(",");
+    var returnValue = 0;
+    if ( strNumbers.length > 1 ){
+      returnValue = Number(strNumbers[0]) + Number(strNumbers[1]);
+    }else {
+      returnValue = strNumbers[0] == "" ? 0 : Number(str);
+    }
+    return returnValue;
   }
 }
