@@ -30,8 +30,6 @@ exports.remainder = function( val1, val2 ){
 
 exports.addString = function( str ){
   if (typeof str === "string"){
-    if(str == ""){
-      return 0;
-    };
+    return str == "" ? 0 : Number(str) ;
   }
 }
