@@ -32,6 +32,11 @@ describe('Calculator', function() {
     assert.equal(calculator.addString("1"), 1);
     assert.equal(calculator.addString("1,2"), 3);
     assert.equal(calculator.addString("1,2,3,4,5"), 15);
+    assert.throws(
+      function(){calculator.addString("-1")},
+      "negatives not allowed"
+    );
+
   });
 
 });
