@@ -5,14 +5,13 @@
  * any number of parameters
  */
 exports.add = function() {
-  var i=0;
-  if( arguments.length > 1 ){
-    while( i < arguments.length - 1 ){
-      i++;
-      arguments[i] = Number(arguments[i-1]) + Number(arguments[i]);
+  var sum=0;
+  if( arguments.length > 0 ){
+    for( var arg in arguments ){
+      sum += Number( arguments[arg] );
     }
   }
-  return arguments[i] | 0;
+  return sum;
 }
 
 exports.multiply = function(val1, val2) {
