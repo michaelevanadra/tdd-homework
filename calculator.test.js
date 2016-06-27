@@ -37,6 +37,15 @@ describe('Calculator', function() {
       "negatives not allowed"
     );
 
+    assert.throws(
+      function(){calculator.addString("1,-2")},
+      "negatives not allowed"
+    );
+
+    assert.throws(
+      function(){calculator.addString(1)},
+      "Non string input is not allowed"
+    );
   });
 
 });
