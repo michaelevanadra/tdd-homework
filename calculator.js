@@ -32,7 +32,10 @@ exports.addString = function( str ){
   if (typeof str === "string"){
     var strNumbers = str.split(",");
     var returnValue = 0;
-    if ( strNumbers.length > 1 ){
+    if ( str.match(/-[0-9]+/g) != null ){
+      throw "negatives not allowed";
+
+    } else if ( strNumbers.length > 1 ){
       var i=0;
       while( i < strNumbers.length - 1 ){
         i++;
